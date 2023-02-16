@@ -5,7 +5,7 @@ using DataFrames
 using Polynomials
 using LsqFit
  
-include("ThinningTrajectories/src/thinnig_trajectories.jl")
+include("thinnig_trajectories.jl")
 include("Experiment_setup.jl")
 
 n_poly = [2,3,4,5]
