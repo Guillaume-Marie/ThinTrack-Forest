@@ -154,7 +154,7 @@ callback!(
 
     display(Sexp["Sylviculture"][3])
 
-    dd1 = ThinningTrajectories.estimate_θrdi(pft, Sexp)
+    dd1 = estimate_θrdi(pft, Sexp)
 
     ddp1 = stack(DataFrame(Qdiameter=dd1.Qdiameter, 
         density_the=dd1.stem_density, 
