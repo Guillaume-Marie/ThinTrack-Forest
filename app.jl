@@ -173,8 +173,8 @@ callback!(
     #ddp2 = vcat(ddp2, DataFrame(Qdiameter=dd1.lower_rdi[1], value=dd1.lower_rdi[2], variable="rdi_lower"))
         
     ddp3 = stack(DataFrame(Qdiameter=dd1.Qdiameter, 
-        BA_the=ThinningTrajectories.BA([dd1.Qdiameter,dd1.stem_density]), 
-        BA_pred=ThinningTrajectories.BA([dd1.Qdiameter,dd1.pre[2]])), 2:3)  
+        BA_the=BA([dd1.Qdiameter,dd1.stem_density]), 
+        BA_pred=BA([dd1.Qdiameter,dd1.pre[2]])), 2:3)  
 
     pp1 = plot(
         ddp1,
@@ -225,7 +225,7 @@ callback!(
     return [pp1 pp2 pp3]
 end
 
-#port = parse(Int64, ENV["PORT"])
-#run_server(app, "0.0.0.0", port)
+port = parse(Int64, ENV["PORT"])
+run_server(app, "0.0.0.0", port)
 
-run_server(app, "0.0.0.0", debug=true)
+#run_server(app, "0.0.0.0", debug=true)

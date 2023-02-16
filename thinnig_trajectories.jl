@@ -263,7 +263,7 @@ upper and lower bounds
 - f1 (Forest): A `Forest` object with calculated 
 variables and plotted results
 """
-function estimate_θrdi(PFT, Sexp::Dict; mod=dia_lin)::ThinningTrajectories.Forest
+function estimate_θrdi(PFT, Sexp::Dict; mod=dia_lin)::Forest
 
     syl_par = Sexp["Sylviculture"][PFT] 
     ORC_par = Sexp["Experiment"][PFT] 
