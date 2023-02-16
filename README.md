@@ -18,9 +18,6 @@ The `ThinTrack-Forest` repository is organized into several files and directorie
 - `forest_def.jl`: module for defining the forest types used in the application.
 - `Parameters.jl`: module for defining global parameters used throughout the application.
 - `Experiment_setup.jl`: module for setting up and running experiments to evaluate the performance of the application.
-- `data`: directory for storing forest yield tables and forester reference manuals used in the application.
-- `experiments`: directory for storing results of experiments.
-- `utils`: directory for utility functions used throughout the application.
 - `Procfile`: file for declaring the commands that are executed by the app on startup.
 - `Project.toml` and `Manifest.toml`: files for managing the project's dependencies.
 - `run.jl`: file for running the application locally.
